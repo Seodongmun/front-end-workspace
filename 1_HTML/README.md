@@ -10,9 +10,7 @@
 
   ## 웹 페이지 개발 방법
 
-  -구조(Structure) : HTML
-  -표현(Presentation) : CSS
-  -동작(Behavior) : JavaScript
+  -구조(Structure) : HTML -표현(Presentation) : CSS -동작(Behavior) : JavaScript
 
   ## HTML(Hyper Text Markup Language)
 
@@ -20,8 +18,7 @@
 
   ## 웹 페이지 생성
 
-  -확장자는 .html 또는 .htm
-  -처음 보여지는 화면의 파일 이름은 "index.html"
+  -확장자는 .html 또는 .htm -처음 보여지는 화면의 파일 이름은 "index.html"
 
   ## main page, sub page
 
@@ -34,12 +31,7 @@
 <태그명 속성="값"></태그명>
 ```
 
-1."<"와 ">" 사이에 명령어 (tag, element) 작성
-2. 시작태그와 종료태그로 구성
-3. 종료태그가 없는 태그들(img, br, hr, meta, input)
-4. 태그는 중첩 가능하며 종료태그는 나중에 작성한 태그 먼저 작성
-5. 가급적 모든 태그와 속성은 소문자로 작성
-
+1."<"와 ">" 사이에 명령어 (tag, element) 작성 2. 시작태그와 종료태그로 구성 3. 종료태그가 없는 태그들(img, br, hr, meta, input) 4. 태그는 중첩 가능하며 종료태그는 나중에 작성한 태그 먼저 작성 5. 가급적 모든 태그와 속성은 소문자로 작성
 
 <div> //2
     <div></div> //1
@@ -48,16 +40,16 @@
 # 속성의 특징
 
 1. 태그(a)와 속성(href), 속성과 속성은 공백으로 구분
-값("#")
+   값("#")
+
 ```html
 <a href="#"></a>
 ```
 
-
 2. 여러 개의 속성을 사용할 수 있다.
 
 ```html
-<img src="/" width="100">
+<img src="/" width="100" />
 ```
 
 3. 하나의 속성에는 값을 한개만 지정 가능하다.
@@ -70,7 +62,7 @@
 
 ```html
 <!--img src="/" width="삼백"-->
-<meta name="keywords" content="영화, 한국영화, 외국영화"> (예외적인 경우)
+<meta name="keywords" content="영화, 한국영화, 외국영화" /> (예외적인 경우)
 ```
 
 ## HTML 기본 문서 구조
@@ -78,8 +70,8 @@
 ```html
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body></body>
+  <head></head>
+  <body></body>
 </html>
 ```
 
@@ -96,16 +88,32 @@
 ## meta 태그
 
 ```html
-<meta charset="UTF-8"> <!-- 문자 세트 지정-->
+<meta charset="UTF-8" />
+<!-- 문자 세트 지정-->
 
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0"> <!--모바일 기기를 위한 설정-->
+<meta
+  name="viewport"
+  content="width=device-width,
+initial-scale=1.0"
+/>
+<!--모바일 기기를 위한 설정-->
 
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <!-- 인터넷 익스플로어 브라우저를 위한 설정-->
 
 <!-- 검색 엔진-->
-<meta name="keywords" content="키워드1, 키워드2">
-<meta name="desciption" contents="문서 설명">
-<meta name="author" contents="문서 작성자">
+<meta name="keywords" content="키워드1, 키워드2" />
+<meta name="desciption" contents="문서 설명" />
+<meta name="author" contents="문서 작성자" />
 ```
+
+<!--에센셜 모음
+
+프리터
+editor format 체크
+Editor: Default Formatter prettier - code formatter 설정
+
+Auto Rename Tag
+live preview
+live server
+-->
