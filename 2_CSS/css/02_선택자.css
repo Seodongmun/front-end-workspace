@@ -1,3 +1,29 @@
+h2 {
+  text-align: center;
+  font-family: Gugi, sans-serif;
+  font-size: 2.5em;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-style: oblique;
+}
+h3 {
+  text-align: left;
+  font-family: teko;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+h4 {
+  text-align: left;
+  font-family: chakra;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+p {
+  font-family: roboto Condensed;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
 /* 1. 전체 선택자 */
 * {
   color: blue;

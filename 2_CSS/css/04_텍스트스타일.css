@@ -1,0 +1,220 @@
+h2 {
+  text-align: center;
+  font-family: Gugi, sans-serif;
+  font-size: 2.5em;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-style: oblique;
+}
+h3 {
+  text-align: left;
+  font-family: teko;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+h4 {
+  text-align: left;
+  font-family: chakra;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+p {
+  font-family: roboto Condensed;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+/*1.=========================================================*/
+#ff1 {
+  font-family: 궁서체;
+}
+#ff2 {
+  font-family: 고딕체;
+}
+#ff3 {
+  font-family: Arial, 궁서체, Helvetica, sans-serif;
+}
+#ff4 {
+  font-family: Gugi, sans-serif;
+}
+/*2.=========================================================*/
+#fw1 {
+  font-weight: bold;
+}
+#fw2 {
+  font-weight: 900; /*bolder*/
+}
+#fw3 {
+  font-weight: 100; /*lighter*/
+}
+/*3.=========================================================*/
+#fs1 {
+  font-size: 30px; /*기본 크기 : 16px*/
+}
+#fs2 {
+  font-size: 2em; /* 32px -> 60px */
+}
+#fs3 {
+  font-size: 2rem; /* 32px */
+}
+#fs4 {
+  font-size: 200%; /* 32px -> 60px */
+}
+/*4.=========================================================*/
+#fs5 {
+  font-style: italic;
+}
+#fs6 {
+  font-style: oblique;
+}
+/*5.=========================================================*/
+#fv {
+  font-variant: small-caps;
+}
+/*6.=========================================================*/
+/* 
+font : font-style | font-variant | font-weight | font-size | line-height | font-family;
+ */
+#font1 {
+  font: italic small-caps bold 32px/2 "Gugi";
+}
+#font2 {
+  font: 2rem "Gugi";
+}
+/*7.=========================================================*/
+#c-name {
+  color: red;
+}
+#c-16 {
+  color: #dd882e;
+}
+#c-rgb {
+  color: rgb(68, 223, 78);
+  color: rgba(68, 223, 78, 0.5);
+}
+#c-hsl {
+  color: hsl(200, 50%, 50%);
+  color: hsla(200, 50%, 50%, 0.2);
+}
+/*8.=========================================================*/
+#td1 {
+  text-decoration: underline;
+}
+#td2 {
+  text-decoration: overline;
+}
+#td3 {
+  text-decoration: line-through;
+}
+#td4 {
+  text-decoration: none;
+}
+/*9.=========================================================*/
+#tt1 {
+  text-transform: uppercase;
+}
+#tt2 {
+  text-transform: lowercase;
+}
+#tt3 {
+  text-transform: capitalize;
+}
+/*10.=========================================================*/
+.shadow {
+  font-size: 50px;
+  font-weight: 900;
+}
+/*
+    text-shadow: dx dy blur color
+    - dx : 그림자의 가로방향 거리 지정 (오른쪽 : 양수, 왼쪽 : 음수)
+    - dy : 그림자의 세로방향 거리 지정 (아래쪽 : 양수, 위쪽 : 음수)
+    - blur : 그림자의 흐려짐 정도 (양수 : 모든 방향으로 번짐, 음수 : 모든 방향으로 축소)
+    - color : 그림자의 색성 지정 (기본값 : 현재 글자색)
+*/
+#ts1 {
+  color: orangered;
+  text-shadow: 5px 5px 5px black;
+}
+#ts2 {
+  color: white;
+  text-shadow: 0px 0px 10px yellowgreen;
+}
+#ts3 {
+  text-shadow: 0px 0px 4px gray, 0px -5px 4px yellowgreen, 0px -10px 8px orange,
+    0px -15px 15px orangered, 0px -22px 20px red;
+}
+/*11.=========================================================*/
+#whs {
+  border: 1px solid;
+  width: 200px;
+  white-space: normal;
+  /* normal : 기본값. 여러 개의 공백을 하나로 표시*/
+  white-space: nowrap;
+  /* nowrap : 여러 개의 공백을 하나로 표시, 영역을 넘어가는
+                내용은 줄바꾸지 않고 한줄로 표시*/
+  white-space: pre;
+  /* pre : 여러 개의 공백을 그대로 표시,
+                영역을 넘어가는 내용은 줄바꾸지 않고 한줄로 표시*/
+  white-space: pre-line;
+  /* pre-line : 여러 개의 공백을 하나로 표시*/
+  white-space: pre-wrap;
+  /* pre-wrap : 여러 개의 공백을 그대로 표시*/
+}
+/*12.=========================================================*/
+#ls {
+  letter-spacing: 10px;
+}
+/*13.=========================================================*/
+#ws {
+  word-spacing: 20px;
+}
+/*14.=========================================================*/
+#ta1 {
+  text-align: left;
+}
+#ta2 {
+  text-align: right;
+}
+#ta3 {
+  text-align: center;
+}
+#ta4 {
+  text-align: justify;
+}
+/*15.=========================================================*/
+#ti {
+  text-indent: 10px;
+}
+/*16.=========================================================*/
+#lh {
+  line-height: 40px;
+  line-height: 1.8;
+}
+/*17.=========================================================*/
+/*
+    text-overflow
+    -clip(기본값) : 영역을 넘어가는 텍스트를 자른다.
+    -ellipsis : 말 줄임으로 잘린 텍스트를 표현한다.
+    - white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+*/
+#to {
+  background: beige;
+  width: 500px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*18.=========================================================*/
+/*
+    list-style(-type)
+    - disc (기본값) : 채워진 원 모양 불렛
+    - circle : 빈 원 모양 불렛
+    - square : 채운 사각형 모양 불렛
+    - none : 불렛 없애기
+*/
+ul {
+  list-style: square;
+  list-style: none;
+}

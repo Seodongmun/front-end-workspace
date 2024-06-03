@@ -15,7 +15,7 @@ h3 {
 h4 {
   text-align: left;
   font-family: chakra;
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: capitalize;
 }
 p {
@@ -24,21 +24,7 @@ p {
   text-transform: capitalize;
 }
 
-#id1 {
-  background: skyblue;
-}
+/*1.=========================================================*/
 
-.class1 {
-  background: yellowgreen;
-  color: red;
-}
 
-div {
-  background: teal !important;
-  color: white !important;
-  width: 200px;
-  height: 200px;
-}
-div {
-  background: pink;
-}
+(--- 1. ---)
