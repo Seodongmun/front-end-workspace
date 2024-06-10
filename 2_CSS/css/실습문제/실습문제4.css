@@ -1,0 +1,74 @@
+.container {
+  height: 100vh;
+  background: linear-gradient(45deg, black, blue);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 42%;
+}
+
+.square {
+  width: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80%;
+  animation: square 1s infinite;
+  animation-delay: 0s;
+  border-radius: 20px;
+}
+
+.square:nth-child(1) {
+  animation-delay: 2;
+  transform: scaleY(0.5);
+  transition: 5s linear;
+}
+.square:nth-child(2) {
+  animation-delay: 2;
+  transform: scaleY(0.5);
+  transition: 5s linear;
+}
+
+.square:nth-child(3) {
+  animation-delay: 2;
+  transform: scaleY(0.5);
+  transition: 5s linear;
+}
+
+.square:nth-child(4) {
+  animation-delay: 2;
+  transform: scaleY(0.5);
+  transition: 5s linear;
+}
+
+.square:nth-child(5) {
+  animation-delay: 2;
+  transform: scaleY(0.5);
+  transition: 5s linear;
+}
+
+.square:nth-child(6) {
+  animation-delay: 2;
+  transform: scaleY(0.5);
+  transition: 5s linear;
+}
+
+.square:nth-child(7) {
+  animation-delay: 2;
+  transform: scaleY(0.5);
+  transition: 4s linear;
+}
+
+@keyframes square {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.4);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

@@ -1,0 +1,120 @@
+.LOGO {
+  width: 10%;
+  font-weight: bolder;
+  font-size: 3rem;
+  display: flex;
+}
+
+.heading:hover {
+  color: black;
+  background-color: black;
+  color: white;
+  padding: 30px 10px 30px 10px;
+}
+
+.header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  background: white;
+}
+header > * {
+  width: 33.33%;
+  display: flex;
+}
+
+.header-menu {
+  display: block;
+  display: flex;
+  background-color: white;
+  width: 20%;
+  font-weight: bolder;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+header form {
+  justify-content: center;
+}
+
+.section1 {
+  height: 100vh;
+  background-color: yellow;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.section2 {
+  height: 100vh;
+  background-color: red;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.section3 {
+  height: 100vh;
+  background-color: blueviolet;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.section-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.TOP {
+  position: fixed;
+  /* 
+  원래 a(inline요소)태그는 width,height 값이 안들어가지만 fixed 하면 들어간다
+  */
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  align-items: center;
+  justify-content: center;
+}
+p {
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
