@@ -19,7 +19,7 @@
     <script>
       for (let i = 1; i <= 1000; i++) {
         if (i % 3 == 0) {
-          console.log(i % 3);
+          console.log(i / 3);
         }
       }
     </script>
@@ -41,36 +41,61 @@
             
     -->
     <script>
-      for (let i = 0; i < 10; i++) {
-        if (i % 2 == 1) {
-          console.log(i);
+      for (let i = 2; i < 10; i++) {
+        if (i / i != i) {
         }
+
+        console.log(i);
       }
     </script>
 
     <!-- Q6. 배열 안의 데이터를 모두 2배로 만들어서 출력하세요 -->
     <script>
       const nums2 = [1, 3, 5];
+      const result = nums2.map(function (value) {
+        return value * 2;
+      });
+      console.log(result);
     </script>
 
     <!-- Q7. 배열에 있는 데이터들로 합계와 평균을 출력하세요 -->
     <script>
       const nums3 = [90, 85, 70, 86, 97];
+      const result3 =
+        nums3.reduce(function (acc, value) {
+          return acc + value;
+        }) / 5;
+      console.log(result3);
     </script>
 
     <!-- Q8. 두 배열의 각 데이터의 곱셈을 한 데이터들로 이루어진 새로운 배열을 생성하여 출력하세요 -->
     <script>
       const a1 = [12, 0, 2, 5, 4];
       const b1 = [5, 15, 6, 7, 8];
+      const c1 = a1.map(function (value) {
+        return value * 2;
+      });
+      const d1 = b1.map(function (value) {
+        return value * 2;
+      });
+      const e1 = [...c1, ...d1].sort((a, b) => a - b);
+      console.log(c1);
+      console.log(d1);
+      console.log(e1);
     </script>
 
     <!-- Q9. 두 배열의 데이터 값이 서로 같은 데이터들만 이루어진 새로운 배열을 생성하여 출력하세요
             배열.includes(데이터) : 해당 데이터가 배열에 있으면 true, 없으면 false
     -->
+
     <script>
       const a2 = [12, 0, 2, 5, 4];
       const b2 = [0, 2, 3, 12, 8];
       const c2 = [];
+      const d2 = [...a2, ...b2].filter((value) => {
+        return [a2], [b2].includes(0, 2, 12);
+      });
+      console.log(d2);
     </script>
 
     <!-- Q10. 2차원 배열에는 3명의 학생의 4과목 성적이 들어 있습니다. 각 학생들의 합계와 평균을 출력하세요 -->
@@ -80,6 +105,24 @@
         [87, 93, 62, 83],
         [98, 90, 77, 97],
       ];
+      const student1Scores = scores[0].reduce(function (acc, value) {
+        return acc + value;
+      });
+      const student2Scores = scores[1].reduce(function (acc, value) {
+        return acc + value;
+      });
+      const student3Scores = scores[2].reduce(function (acc, value) {
+        return acc + value;
+      });
+      const student1Average = student1Scores / 4;
+      const student2Average = student2Scores / 4;
+      const student3Average = student3Scores / 4;
+      console.log(student1Scores);
+      console.log(student2Scores);
+      console.log(student3Scores);
+      console.log(student1Average);
+      console.log(student2Average);
+      console.log(student3Average);
     </script>
   </body>
 </html>
