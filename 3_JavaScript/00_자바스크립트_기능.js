@@ -1,5 +1,13 @@
 ////////////////////////////////////////////////////////////////////
-(DOM)
+                                  
+
+
+                                    {DOM}
+
+
+
+
+
 
 document.getElementsByTagName("div")         (태그로 가져오기)
 document.getElementById("id")                (아이디로 가져오기)
@@ -12,10 +20,12 @@ document.querySelectorAll(...) <- 입력값 싹다 (선택자로 가져오기ALL
 .innerHTML =""                               (태그 빼고 텍스트 입력)
 .textContent =""                             (태그 포함 전체 입력)
 
-(속성 조작하기) /구글링/
-.setAttribute ("","")
-.getAttribute ("","")
-
+(속성 조작하기)
+.setAttribute("","")                        (요소에 속성 값을 설정하는 함수)
+                                            ("바꿀 속성값", "바뀌어진 속성값")
+.getAttribute ("")                        (요소에서 속성 값을 가져오는 함수)
+                                            ("속성") -> ("문자열 속성값")
+  
 (스타일 조작하기)
 .style.color = "orange";                     (color 변경)
 .style.backgroundColor = "yellow";          (backgroundColor 변경)
@@ -36,17 +46,30 @@ document.querySelectorAll(...) <- 입력값 싹다 (선택자로 가져오기ALL
   .classList.toggle("black")                 (black 왔다갔다)
 
 
-
 document.querySelector("(#.)...") /구글링/
 document.createElement(" ") /구글링/
 .appendChild /구글링/
-
 p.parentNode.removeChild /구글링/
 
 
-(DOM)
+  
+  
+  
+                                  {DOM}
+  
+  
+  
+
 ////////////////////////////////////////////////////////////////////
-(내장객체)
+
+
+  
+
+                                {내장객체}                               
+
+
+
+
 
 Math.min()                                    (최소값)       
 Math.max()                                    (최대값)
@@ -67,26 +90,47 @@ now.getSeconds                                (초)
 new Date 
 
 setTimeout(() => {
-    console.log("3초 후 실행!");         ($초 후 실행)
+    console.log("3초 후 실행!");               ($초 후 실행)
   }, 3000);//<- 3초는(3000)
 
 setInterval(() => {
     console.log(`${++second}초`);   ($초씩 증가(마이너스면 감소))
   }, 1000);
 
-location.reload();                      (새로고침)
-location.href = "https://www.naver.com";(해당 페이지로 이동)
+location.reload();                            (새로고침)
+location.href = "https://www.naver.com";      (해당 페이지로 이동)
 
 
-(내장객체)
+
+
+
+                                  {내장객체}
+
+
+
+
+
 //////////////////////////////////////////////////////////////////
 
+                                
+                                  
+                                
+                                  
+                                    {이벤트}
 
-removeHandler
-addEventListener
-onclick
-onmouseenter
-onmouseleave
+                                  
+                                  
+                                  
+.addEventListener(``, )                     (`이벤트 타입`, 실행할 함수)
+          (이벤트 타입은 대표적으로 click, DOMConentLoad, scroll, submit)
+
+onclick                           (클릭했을 때 작동)
+
+onmouseenter                      (커서를 올렸을때 작동)
+
+onmouseleave                      (커서가 떠났을때 작동)
+
 e.target 
 e.currentTarget
 removeAttribute
+removeHandler
