@@ -57,10 +57,13 @@
     <script>
       // const customer = document.querySelector//("#customer");
       function printValue() {
-
-
+        const name = document.querySelector("#customer");
+        const product = document.querySelector("#product");
+        const price = document.querySelector("#price");
+        // id 값의 경우는 굳이 querySelector 로 불러오지 않아도
+        // 바로 사용 가능하다!!
+        result1.innerHTML = `${name.value} 님의 구매 상품은 ${product.value}, 구매 가격은 ${price.value}원 입니다. `;
       }
-  
     </script>
 
     <hr />
@@ -100,7 +103,7 @@
 
     <fieldset>
       <legend>보기</legend>
-      <label id="la1">콜라,사이다,햄버거,피자,한약</label>
+      <label id="la1">콜라,사이다,햄버거,피자,한약,파스타,족발</label>
     </fieldset>
 
     <br />
@@ -118,14 +121,15 @@
     <!-- 5. ol>li 속성을 result3에 넣는게 목표 -->
 
     <script>
-      const list = la1.innerHTML.split(",");
-      //console.log(list);
-      const ol = document.createElement("ol");
       function stringSplit() {
-        for (const value of list) {
+        const laList = la1.innerHTML.split(",");
+        const ol = document.createElement("ol");
+        for (const value of laList) {
           const li = document.createElement("li");
           li.innerHTML = value;
+          console.log(value);
           ol.appendChild(li);
+          console.log(ol);
         }
         result3.appendChild(ol);
       }
@@ -175,17 +179,17 @@
     <script>
       function arrayTest() {
         const arr = preview.innerHTML.split(" ");
-        console.log(arr);
-        const index = arr.indexOf(remove.value);
-        console.log(index);
-        arr.splice(remove, 1);
+        if (remove.value != "") {
+          const index = arr.indexOf(remove.value);
+          arr.splice(index, 1);
+        }
         arr.push(add.value);
-
         result4.innerHTML = arr.join(" ");
       }
     </script>
 
     <hr />
+    피자
 
     <h2>문제 5. 학생 정보 테이블에 입력하기</h2>
     <p>

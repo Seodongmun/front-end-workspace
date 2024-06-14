@@ -46,15 +46,11 @@ document.querySelectorAll(...) <- 입력값 싹다 (선택자로 가져오기ALL
   .classList.toggle("black")                 (black 왔다갔다)
 
 
-document.querySelector("(#.)...") /구글링/
-document.createElement(" ") /구글링/
-.appendChild /구글링/
-p.parentNode.removeChild /구글링/
 
 
-  
-  
-  
+
+
+
                                   {DOM}
   
   
@@ -63,7 +59,7 @@ p.parentNode.removeChild /구글링/
 ////////////////////////////////////////////////////////////////////
 
 
-  
+
 
                                 {내장객체}                               
 
@@ -118,9 +114,11 @@ location.href = "https://www.naver.com";      (해당 페이지로 이동)
                                   
                                     {이벤트}
 
-                                  
-                                  
-                                  
+
+
+
+                                    
+
 .addEventListener(``, )                     (`이벤트 타입`, 실행할 함수)
           (이벤트 타입은 대표적으로 click, DOMConentLoad, scroll, submit)
 

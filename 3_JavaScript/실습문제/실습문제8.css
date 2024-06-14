@@ -1,0 +1,13 @@
+span {
+  border: black solid 1px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+span button {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
