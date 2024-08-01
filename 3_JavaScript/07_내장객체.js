@@ -5,7 +5,7 @@ function btn1() {
 }
 
 function btn2() {
-  const number = 2.896;
+  const number = 2.5;
   console.log("반올림 : ", Math.round(number)); // 3
   console.log("버림 : ", Math.floor(number)); // 2
   console.log("올림 : ", Math.ceil(number)); // 3
