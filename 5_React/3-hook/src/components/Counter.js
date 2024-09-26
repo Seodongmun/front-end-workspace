@@ -19,10 +19,12 @@ const Counter = () => {
 
   // 마운트
   useEffect(() => {
-    // console.log("mount!");
+    console.log("mount!");
   }, []);
 
   // 업데이트
+  // useState는 한박자 느리게 반응하므로
+  // useRef를 사용해서 바로 업데이트 한다
   useEffect(() => {
     if (!updateCheckRef.current) {
       updateCheckRef.current = true;

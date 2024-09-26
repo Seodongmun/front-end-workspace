@@ -5,9 +5,9 @@ import Converter from "./components/Converter";
 const App = () => {
   return (
     <>
-      {/* <Counter />
-      <InputText /> */}
-      <Converter />
+      <Counter />
+      {/* <InputText /> */}
+      {/* <Converter /> */}
     </>
   );
 };
