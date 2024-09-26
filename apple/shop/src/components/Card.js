@@ -1,25 +1,22 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import data from "./Data";
+import { Link, useParams } from "react-router-dom";
 
-function Card() {
-  let [shoes] = useState(data);
+function Card(props) {
   // return 시점 잘 확인하기
   return (
     <div className="row">
-      {shoes.map((shoes, i) => (
+      {props.shoes.map((shoes, i) => (
         <div className="col-md-4" key={i}>
           {/* 이미지 누르면 해당 디테일 페이지 이동 */}
-          <Link to={`/detail`}>
+          <Link to={`/detail/${i}`}>
             <img
               src={`https://codingapple1.github.io/shop/shoes${i + 1}.jpg`}
               width="80%"
-              alt={shoes.title}
+              alt={props.shoes[i].title}
             />
           </Link>
-          <h3>{shoes.title}</h3>
-          <h4>{shoes.content}</h4>
-          <p>{shoes.price.toLocaleString()}원</p>
+          <h3>{props.shoes[i].title}</h3>
+          <h4>{props.shoes[i].content}</h4>
+          <p>{props.shoes[i].price.toLocaleString()}원</p>
         </div>
       ))}
     </div>
