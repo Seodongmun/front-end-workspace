@@ -1,4 +1,4 @@
-import { getFetchThen, getAwait } from "./api/movie";
+import { getFetchThen, getAwait, getAxios } from "./api/movie";
 import { useEffect, useState } from "react";
 
 const App = () => {
@@ -19,11 +19,15 @@ const App = () => {
     setData(result);
   };
 
-  const loadAxois = async () => {};
+  const loadAxois = async () => {
+    const result = await getAxios();
+    setData(result);
+  };
 
   useEffect(() => {
     // loadFetchThen();
-    loadAwait();
+    // loadAwait();
+    loadAxois();
   }, []);
   return (
     <>

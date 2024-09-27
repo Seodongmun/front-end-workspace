@@ -22,6 +22,10 @@ export const getAwait = async () => {
 
 export const getAxios = async () => {
   // get, post , put , delete 방식에따라 수정
-  const response = await axios.get();
-  return response.josn();
+  try {
+    const response = await axios.get("http://localhost:8080/api/movie");
+    return response.data();
+  } catch (error) {
+    console.log(error);
+  }
 };
